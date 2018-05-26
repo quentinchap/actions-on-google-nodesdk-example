@@ -7,6 +7,7 @@ yarn-error.log*
 .firebaserc
 ngrok
 gactions
+creds.data
 
 # Runtime data
 pids
