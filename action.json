@@ -1,0 +1,42 @@
+{
+
+    "actions": [{
+            "description": "Default Welcome Intent",
+
+            "name": "MAIN",
+            "fulfillment": {
+                "conversationName": "home-up"
+            },
+            "intent": {
+                "name": "actions.intent.MAIN",
+                "trigger": {
+                    "queryPatterns": [
+                        "Parle a home up"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LIGHTON",
+            "intent": {
+                "name": "com.quentinchapelle.LIGHTON",
+                "trigger": {
+                    "queryPatterns": [
+                        "Allume la lampe"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "conversationName": "home-up"
+            }
+        }
+    ],
+    "conversations": {
+        "home-up": {
+            "name": "home-up",
+            "url": "https://b5b9abe7.ngrok.io",
+            "fulfillmentApiVersion": 2
+        }
+    },
+    "locale": "fr"
+}
